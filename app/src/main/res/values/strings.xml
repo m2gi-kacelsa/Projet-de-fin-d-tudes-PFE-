@@ -1,0 +1,322 @@
+<resources>
+    <string name="app_name">Ikhtar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="accueil">Accueil</string>
+    <string name="contexte">Comparez les offres des assurances</string>
+    <string name="Auto">Assurance Automobile</string>
+    <string name="Habita">Assurance Habitation</string>
+    <string name="propos"> A Propos</string>
+    <string name="valeur">Valeur du Vehicule :</string>
+    <string name="genre">Genre*</string>
+    <string name="type">Type du vehicule*</string>
+    <string name="puissance">Puissance*</string>
+    <string name="usage">Usage*</string>
+    <string name="date">Date de mise en circulation</string>
+    <string name="poids">Poids total du Véhicule en Tonnes*</string>
+    <string name="wilaya">Zone de Circulation*</string>
+    <string name="age_conducteur">Avez-vous moins de 25 ans ?</string>
+    <string name="permis">Votre permis a-t-il moins d un an ?</string>
+    <string name="inflammable">Votre vehicule transporte-t-il des matières inflammables?</string>
+    <string name="user">Recevoir des informations sur l assurance ?</string>
+    <string name="gar_fac">Garanties Facultatives</string>
+    <string name="vol_inc_origin">Oui</string>
+    <string name="vol_inc_prop">Non</string>
+    <string name="sys_alarme">Bon système d alarme?</string>
+    <string name="bdg">Bris de Glace</string>
+    <string name="dasc">DASC</string>
+    <string name="PJ">Protection Juridique</string>
+    <string name="AA">Assistance Automobile</string>
+    <string name="dc">Dommage collision</string>
+    <string name="valv">DR à valeur vénale</string>
+    <string name="lim1">limité à 10000 DA</string>
+    <string name="lim2">limité à 20000 DA</string>
+    <string name="lim3">limité à 30000 DA</string>
+    <string name="lim4">limité à 40000 DA</string>
+    <string name="lim5">limité à 50000 DA</string>
+    <string name="dasc100">DASC à 100%</string>
+    <string name="dasc200">DASC à 200000 DA</string>
+    <string name="dasc300">DASC à 300000 DA</string>
+    <string name="dasc500">DASC à 500000 DA</string>
+
+    <string name="vol_inc"> Vol et Incendie</string>
+
+    <!-- spinnner de la pade d'aceuil-->
+
+    <!-- Spinner Types de veicules-->
+    <string-array name="type_vehicules">
+        <item>Véhicules de Tourisme</item>
+        <item> Camion </item>
+        <item> Véhicules utilitaires </item>
+        <item> Transport de Personnes </item>
+        <item> Véhicule particulier avec Remorque </item>
+        <item>Transport marchandise  </item>
+        <item>Véhicules spéciaux </item>
+        <item>Remorque </item>
+        <item>MOTO </item>
+        <item>ENGIN</item>
+    </string-array>
+
+    <string-array name="genre_vehiculeTourism">
+        <item>Véhicules particulier sans remorques</item>
+    </string-array>
+
+    <string-array name="genre_camion">
+        <item>Chasse Neige (Prime Forf, Non reductible)</item>
+        <item>Camions et bennes utilises uniquement pour l’enlèvement des ordures ménagères</item>
+        <item> Camions salubrités (vidange)</item>
+        <item> Tracteurs et camions appartenant aux entreprises ou exploitant d’attraction foraine ambulante</item>
+        <item> Véhicules de sapeurs-pompiers utilisés par le service incendie</item>
+        <item>Véhicules dont le poids total excède 3,5 tonnes</item>
+        <item>TPM dont la charge utile excède 2 TONNES sans transport de matières inflammables</item>
+    </string-array>
+
+    <string-array name="genre_vehiculUtilitr">
+        <item>Voitures d’ambulance</item>
+        <item>Corbillards  et fourgons funéraires</item>
+    </string-array>
+
+    <string-array name="genre_transportPersonnes">
+        <item>Transport public de voyageurs</item>
+    </string-array>
+
+    <string-array name="genre_vehParavecRemorque">
+        <item> Véhicules particuliers attelés d’une remorque</item>
+    </string-array>
+
+    <string-array name="genre_tanspMarch">
+        <item>TPM dont la charge utile n’excède pas 2T sans transport de matière inflammable  </item>
+        <item> Tracteurs routier non porteur attelé d’une semi-remorque </item>
+        <item> Tracteurs routier non porteur </item>
+    </string-array>
+
+    <string-array name="genre_VS">
+        <item>Voitures utilisées uniquement à l’occasion des défiles ou exhibition</item>
+        <item>Véhicules moteurs utilisées indépendamment de la remorque comping  </item>
+        <item> Tracteurs forestiers</item>
+    </string-array>
+
+    <string-array name="genre_remorque">
+        <item>Remorques de plus de 3,5 tonnes  </item>
+        <item> Remorques Transport Public de Marchandises </item>
+    </string-array>
+
+    <string-array name="genre_moto">
+        <item>Remorque de véhicule particulier</item>
+        <item>Motocycliste sans side cars jusqu’à 125</item> <!-- 02-->
+        <item>S/Side cars- Tricycles – Triporteurs</item> <!-- 03-->
+        <item>Cyclomoteurs jusqu’au 50 CM3</item>
+        <item>Scooters jusqu’au 125 CM3</item>
+        <item>Scooters jusqu’au 175 CM3 </item>
+        <item> Triporteurs – Tricycles jusqu’au 125 CM3</item>
+        <item>Vélomoteurs sans side cars jusqu’au 125 CM3</item>
+    </string-array>
+
+    <string-array name="genre_engins">
+        <item>Engins de chantiers matériels de travaux publics avec utilisation sur la voie publique</item>
+        <item> Engins de chantiers matériels de travaux publics sans utilisation sur la voie publique</item>
+    </string-array>
+
+
+    <!-- spinnner GENRE-->
+    <string-array name="genre">
+        <item>Véhicules particulier sans remorques</item>
+        <item>Remorque de véhicule particulier</item>
+        <item>Motocycliste sans side cars jusqu’à 125</item>
+        <item>S/Side cars- Tricycles – Triporteurs</item>
+        <item>TPM dont la charge utile n’excède pas 2T sans transport de matière inflammable  </item>
+        <item>Cyclomoteurs jusqu’au 50 CM3</item>
+        <item>Scooters jusqu’au 125 CM3</item>
+        <item>Scooters jusqu’au 175 CM3 </item>
+        <item> Triporteurs – Tricycles jusqu’au 125 CM3</item>
+        <item>Vélomoteurs sans side cars jusqu’au 125 CM3</item>
+        <item>Voitures d’ambulance</item>
+        <item>Voitures utilisées uniquement à l’occasion des défiles ou exhibition</item>
+        <item>Corbillards  et fourgons funéraires</item>
+        <item>Chasse Neige (Prime Forf, Non reductible)</item>
+        <item> Camions et bennes utilises uniquement pour l’enlèvement des ordures ménagères </item>
+        <item> Camions salubrités (vidange)</item>
+        <item> Tracteurs et camions appartenant aux entreprises ou exploitant d’attraction foraine ambulante</item>
+        <item>Véhicules moteurs utilisées indépendamment de la remorque comping  </item>
+        <item> Véhicules de sapeurs-pompiers utilisés par le service incendie</item>
+        <item> Véhicules particuliers attelés d’une remorque</item>
+        <item>Véhicules dont le poids total excède 3,5 tonnes</item>
+        <item>Remorques de plus de 3,5 tonnes  </item>
+        <item> T.PM (Transport Public de Marchandises) dont la charge utile excède 2 TONNES sans transport de matières inflammables</item>
+        <item> Remorques Transport Public de Marchandises </item>
+        <item>Transport  public de voyageurs</item>
+        <item> Transport du personnel   </item>
+        <item> Tracteurs routier non porteur attelé d’une semi-remorque </item>
+        <item>  Tracteurs routier non porteur</item>
+        <item> Tracteurs forestiers</item>
+        <item>Engins de chantiers matériels de travaux publics avec utilisation sur la voie publique</item>
+        <item> Engins de chantiers matériels de travaux publics sans utilisation sur la voie publique</item>
+        <item> Garagistes automobile</item>
+        <item> Garagistes cyclomoteurs  </item>
+        <item> Dépannage </item>
+    </string-array>
+
+    <!-- spinnner USAGE-->
+
+    <string-array name="usage">
+        <item>AFFAIRE</item>
+        <item>AUTO ECOLE - TAXI- LOCATION</item>
+        <item>COMMERCE</item>
+        <item>COMMERCE C. bis</item>
+        <item>DEPANNAGE</item>
+        <item>FONCTIONNAIRE</item>
+        <item> TRANSPORT DU PERSONNEL</item>
+        <item>TRANSPORT PUBLIC DE MARCHANDISES (T.P.M)</item>
+        <item>TRANSPORT PUBLIC DE VOYAGEURS (T.PV)</item>
+        <item>VEHICULES SPECIAUX</item>
+    </string-array>
+
+    <!-- Spinner pour usage , pour les vehicules dont le poids total excede 3.5 TONNES-->
+    <string-array name="usage_30">
+        <item>COMMERCE C. bis</item>
+    </string-array>
+
+    <!-- Spinner pour usage , pour les Remorque transport public de marchandise-->
+    <string-array name="usage_33">
+        <item>TRANSPORT PUBLIC DE MARCHANDISES (T.P.M)</item>
+    </string-array>
+
+    <!-- Spinner pour usage , pour les Tracteur forestier-->
+    <string-array name="usage_38">
+        <item>VEHICULES SPECIAUX</item>
+    </string-array>
+
+    <!-- Spinner pour les vehicules particulier sans remorque-->
+
+    <!-- Spinner pour les vehicules de transport-->
+    <string-array name="usage_34">
+        <item>COMMERCE</item>
+        <item>TRANSPORT PUBLIC DE VOYAGEURS (T.PV)</item>
+    </string-array>
+
+    <!-- spinnner PUISSANCE-->
+    <string-array name="puissance">
+        <item>2 C.V</item>
+        <item>3 C.V</item>
+        <item> 5 A 6 C.V</item>
+        <item> 7 A 10 C.V</item>
+        <item>11 A 14 C.V</item>
+        <item>15 A 23 C.V</item>
+        <item>24 C.V ET PLUS</item>
+        <item>50 cm CUBE</item>
+        <item>125 cm CUBE</item>
+        <item>175 cm CUBE</item>
+    </string-array>
+
+    <!-- Spinner pour usage , pour les vehicules dont le poids total excede 3.5 TONNES-->
+    <string-array name="puissance_vehiculesPoidLourd">
+        <item>2 C.V</item>
+    </string-array>
+
+    <string-array name="puissance_genre">
+        <item>2 C.V</item>
+        <item>3 C.V</item>
+        <item> 4 C.V</item>
+        <item> 5 C.V</item>
+        <item> 7 C.V ET PLUS</item>
+    </string-array>
+
+    <!--Spinner Tonnage Charge utile-->
+    <string-array name="tonnageChUtl">
+        <item>4 </item>
+        <item> 5</item>
+        <item> 6 </item>
+        <item>7</item>
+        <item>8</item>
+        <item> 9</item>
+        <item> 10</item>
+        <item> 11 </item>
+        <item> 12 </item>
+        <item> 13 </item>
+        <item> 14 </item>
+        <item>16 </item>
+        <item> 17 </item>
+        <item>  18</item>
+        <item> 19 </item>
+        <item> 20 </item>
+        <item> 21 </item>
+        <item> 22 </item>
+        <item> 23 </item>
+        <item> 24 </item>
+        <item> 25 </item>
+        <item> 30 </item>
+        <item> 40 </item>
+        <item> 50 </item>
+        <item> 60 </item>
+        <item> 70 </item>
+        <item> 80 </item>
+    </string-array>
+
+
+    <!--Spinner Nombre de roues -->
+
+    <!-- spinnner WILAYA-->
+    <string-array name="wilaya">
+        <item> ADRAR - 01</item>
+        <item> CHLEF - 02</item>
+        <item>LAGHOUAT - 03</item>
+        <item> OUM EL BOUAGHI - 04</item>
+        <item> BATNA - 05</item>
+        <item>  BEJAIA - 06</item>
+        <item> BISKRA - 07</item>
+        <item> BECHAR - 08</item>
+        <item> BLIDA - 09</item>
+        <item> BOUIRA - 10</item>
+        <item> TAMANRASSET - 11</item>
+        <item> TEBESSA - 12</item>
+        <item>TLEMCEN - 13</item>
+        <item>TIARET - 14</item>
+        <item>TIZIOUZOU - 15</item>
+        <item> ALGER - 16</item>
+        <item>  DJELFA - 17</item>
+        <item>JIJEL - 18</item>
+        <item> SETIF - 19</item>
+        <item> SAIDA - 20</item>
+        <item> SKIKDA - 21</item>
+        <item> SI DI BEL ABBES - 22</item>
+        <item>ANNABA - 23</item>
+        <item>GUELMA - 24</item>
+        <item>CONSTANTINE - 25</item>
+        <item>MEDEA - 26</item>
+        <item> MOSTAGANEM - 27</item>
+        <item> MSILA - 28</item>
+        <item>MASCARA - 29</item>
+        <item> OUARGLA - 30</item>
+        <item> ORAN - 31</item>
+        <item> EL BAYADH - 32</item>
+        <item>ILLIZI - 33</item>
+        <item> BORDJ BOU ARRERIDJ - 34</item>
+        <item> BOUMERDES - 35</item>
+        <item>EL TARF - 36</item>
+        <item>TINDOUF - 37</item>
+        <item> TISSEMSILT - 38</item>
+        <item> EL OUED - 39</item>
+        <item> KHENCHELA - 40</item>
+        <item>SOUKAHRAS - 41</item>
+        <item> TIPAZA - 42</item>
+        <item>MILA - 43</item>
+        <item> AIN DEFLA - 44</item>
+        <item> NAAMA - 45</item>
+        <item> AIN TI MOUCHENT - 46</item>
+        <item>GHARDAIA - 47</item>
+        <item> RELIZANE - 48</item>
+    </string-array>
+
+    <string name="error_vv">veuillez entrer la valeur du vehicule</string>
+    <string name="error_poid">veuillez entrer le poids du vehicule</string>
+    <string name="error_date">veuillez entrer une date</string>
+    <string name="error_place">veuillez entrer le nombre de place</string>
+    <string name="error_prix">veuillez entrer le prix</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

@@ -1,0 +1,482 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/auto_layout"
+    tools:context="com.example.cbscomputer.appcomparateur.AutomobileFragment">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.myass.assur.AutoForm">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop ="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+                <!--Valeur du véhicule -->
+                <TextView
+                    style="@style/CustomTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/valeur" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_vv">
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/valeur_vehicule"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:background="@drawable/editextstyle"
+                        style="@style/inputext"
+                        app:errorEnabled="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Poids du véhicule -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/poids"
+                    style="@style/CustomTextView" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_poids">
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="2"
+                        android:id="@+id/poids_total"
+                        style="@style/inputext"
+                        android:background="@drawable/editextstyle"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Date de mec  -->
+                <TextView
+                    style="@style/CustomTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_date">
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_height="wrap_content"
+                        style="@style/inputext"
+                        android:layout_width="120dp"
+                        android:inputType="number"
+                        android:background="@drawable/editextstyle"
+                        android:id="@+id/dateView"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Type-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/type"
+                    style="@style/CustomTextView"/>
+
+                <Spinner
+                    android:id="@+id/type_vehicule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinnerstyle" />
+                <!--Genre-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genre"
+                    android:paddingTop="16dp"
+                    style="@style/CustomTextView"/>
+                <Spinner
+                    android:id="@+id/genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinnerstyle" />
+
+                <!--RadioGroup transport de personnes-->
+                <RadioGroup
+                    android:id="@+id/tran_gr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone">
+                    <RadioButton
+                        android:id="@+id/tp"
+                        android:padding="16dp"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Transport du personnel" />
+                    <RadioButton
+                        android:id="@+id/sm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="16dp"
+                        android:text="Services des marchés"/>
+                </RadioGroup>
+                <!--nombre de place  -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layut_nbPlace"
+                    android:visibility="gone">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/nbre_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:visibility="gone"
+                        android:hint="Nombre de places du Vehicule?" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Turbo   -->
+                <TextView
+                    android:id="@+id/turbo_groupRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Turbo"
+                    android:visibility="gone"
+                    android:fontFamily="sans-serif"
+                    style="@style/CustomTextView"/>
+                <RadioGroup
+                    android:id="@+id/rg_turbo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <RadioButton
+                        android:id="@+id/oui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="oui"
+                        style="@style/radio"/>
+                    <RadioButton
+                        android:id="@+id/non"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="non"
+                        android:padding="20dp"
+                        style="@style/radio"/>
+                </RadioGroup>
+                <!-- Charge  & Tonne   -->
+                <TextView
+                    android:id="@+id/nb_tonnes"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de tonne"
+                    style="@style/CustomTextView"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/charge_utile"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_height="wrap_content"
+                    android:text="Charge du véhicule"
+                    style="@style/CustomTextView"
+                    android:visibility="gone"/>
+                <Spinner
+                    android:id="@+id/tonnage_chargeUtile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:background="@drawable/spinnerstyle"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                <!--PUISSANCE -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/puissance"
+                    style="@style/CustomTextView"/>
+
+                <Spinner
+                    android:id="@+id/puissance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinnerstyle" />
+
+                <!--USAGE -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usage"
+                    style="@style/CustomTextView"/>
+                <Spinner
+                    android:id="@+id/usage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinnerstyle" />
+
+                <!--WILAYA -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wilaya"
+                    style="@style/CustomTextView"/>
+
+                <Spinner
+                    android:id="@+id/wilaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinnerstyle"/>
+                <!-- Line  -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CustomTextView"
+                    android:background="@drawable/line"/>
+                <!--Questions -->
+                <CheckBox
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age_conducteur"
+                    style="@style/check" />
+
+                <CheckBox
+                    android:id="@+id/permis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permis"
+                    style="@style/check" />
+
+                <CheckBox
+                    android:id="@+id/mat_inf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inflammable"
+                    style="@style/check" />
+                <CheckBox
+                    android:id="@+id/sys_alarme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sys_alarme"
+                    style="@style/check" />
+
+                <!-- Line  -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CustomTextView"
+                    android:background="@drawable/line"/>
+                <!--les garnties -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gar_fac"
+                    android:textColor="#29434e"
+                    android:textSize="24sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+                <CheckBox
+                    android:id="@+id/bdg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bdg"
+                    style="@style/check" />
+                <CheckBox
+                    android:id="@+id/protection_juridique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PJ"
+                    style="@style/check" />
+                <CheckBox
+                    android:id="@+id/aa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AA"
+                    style="@style/check" />
+                <CheckBox
+                    android:id="@+id/vol_inc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/check"
+                    android:text="@string/vol_inc" />
+                <TextView
+                    android:text="Votre poste Radio/CD est-il d'origine?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CustomTextView"/>
+                <RadioGroup
+                    android:id="@+id/rg_VIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/viv_origine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vol_inc_origin"
+                        android:padding="20dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/viv_prop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vol_inc_prop"
+                        android:padding="20dp"
+                        android:textSize="16dp"/>
+                </RadioGroup>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_prixCD">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/viv_prop_prix"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Prix du poste Radio/CD?"
+                        android:inputType="number"
+                        android:maxLength="5" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--DASC REFAITE-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dasc"
+                    style="@style/CustomTextView"/>
+
+                <RadioGroup
+                    android:id="@+id/dascGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/dasc100"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dasc100"
+                        style="@style/radio"/>
+
+                    <RadioButton
+                        android:id="@+id/dasc200"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dasc200"
+                        android:padding="20dp"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/dasc300"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dasc300"
+                        android:padding="20dp"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/dasc500"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dasc500"
+                        android:padding="20dp"
+                        android:textSize="16dp" />
+                </RadioGroup>
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dc"
+                    style="@style/CustomTextView"/>
+
+                <RadioGroup
+                    android:id="@+id/dommage_collision"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/valv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valv"
+                        style="@style/radio"/>
+
+                    <RadioButton
+                        android:id="@+id/lim1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lim1"
+                        android:padding="20dp"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/lim2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lim2"
+                        android:padding="20dp"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/lim3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lim3"
+                        android:padding="20dp"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/lim4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lim4"
+                        android:padding="20dp"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/lim5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lim5"
+                        android:padding="20dp"
+                        android:textSize="16dp"
+                        />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/calcul_auto"
+                    android:layout_width="140dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/boutonstyle"
+                    android:layout_marginLeft="120dp"
+                    android:paddingTop="5dp"
+                    android:text="calculer"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

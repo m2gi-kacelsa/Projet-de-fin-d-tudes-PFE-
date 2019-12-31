@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IKHTAR"
+        android:textSize="20dp"
+        android:textColor="@color/secondaryTextColor"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="IKHTAR est un comparateur de primes d'assurance automobile, permet de comparer
+        des tarifs de plusieurs compagnies d'assurance rapidement et gratuitement et  selon les besoins et le budget
+         de l'utilisateur "/>
+</LinearLayout>
